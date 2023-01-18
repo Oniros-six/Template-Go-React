@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"os"
 
 	"github.com/gofiber/fiber/v2"
@@ -14,7 +15,7 @@ func main() {
 	port := os.Getenv("PORT")
 
 	if port == "" {
-		port = "3000"
+		port = "8080"
 	}
 
 	app.Get("/", func(c *fiber.Ctx) error {
@@ -22,4 +23,5 @@ func main() {
 	})
 
 	app.Listen(":" + port)
+	fmt.Println(port)
 }
