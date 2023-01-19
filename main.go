@@ -15,10 +15,12 @@ func main() {
 	port := os.Getenv("PORT")
 
 	if port == "" {
-		port = "8080"
+		port = "4000"
 	}
 
-	app.Get("/", func(c *fiber.Ctx) error {
+	app.Static("/", "./client/dist")
+
+	app.Get("/a", func(c *fiber.Ctx) error {
 		return c.SendString("Hello")
 	})
 
