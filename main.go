@@ -18,7 +18,7 @@ func main() {
 		port = "4000"
 	}
 
-	app.Static("/", "./client/dist")
+	app.Static("/", "./client/dist/index.html")
 
 	app.Get("/a", func(c *fiber.Ctx) error {
 		return c.SendString("Hello")
