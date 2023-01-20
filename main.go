@@ -20,7 +20,7 @@ func main() {
 
 	app.Static("/", "./client/dist")
 
-	app.Get("/a", func(c *fiber.Ctx) error {
+	app.Get("/prueba", func(c *fiber.Ctx) error {
 		return c.SendString("Hello")
 	})
 

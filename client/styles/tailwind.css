@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  html {
+    font-family: cursive, roboto , system-ui, sans-serif;
+  }
+  body {
+    @apply bg-red-400 
+  }
+
+  h1 {
+    @apply text-2xl;
+  }
+
+  h2 {
+    @apply text-xl;
+  }
+
+  h3 {
+    @apply text-lg;
+  }
+
+  h4 {
+    @apply text-base;
+  }
+
+  h5 {
+    @apply text-sm;
+  }
+
+  h6 {
+    @apply text-xs;
+  }
+
+}
+
+@layer components {
+
+
+ 
+
+  @screen sm {
+
+   
+  }
+
+
+  @screen md {
+
+   
+  }
+
+
+  @screen lg {
+
+   
+  }
+
+
+  @screen xl {
+
+   }
+}

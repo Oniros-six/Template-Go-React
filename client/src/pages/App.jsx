@@ -1,12 +1,11 @@
 import { useState } from 'react'
 import axios from 'axios'
-import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
 
   const consulta = async() => {
-    const resp = await axios.get("/a")
+    const resp = await axios.get("/prueba")
     console.log(resp)
   }
 
